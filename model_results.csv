@@ -1,0 +1,10 @@
+target,model,MAE,RMSE,R2
+points,LinearRegression,4.535,5.876,0.597
+points,RandomForest,4.502,6.031,0.575
+points,GradientBoosting,4.545,6.022,0.577
+rebounds,LinearRegression,1.94,2.505,0.451
+rebounds,RandomForest,1.952,2.569,0.423
+rebounds,GradientBoosting,1.899,2.509,0.449
+assists,LinearRegression,1.411,1.898,0.474
+assists,RandomForest,1.471,2.005,0.413
+assists,GradientBoosting,1.424,1.943,0.449

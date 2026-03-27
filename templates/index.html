@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NBA Player Performance Predictor</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>🏀 NBA Performance Predictor</h1>
+    <p>Predict a player's total Points + Rebounds + Assists (PRA)</p>
+
+    <div class="form">
+      <label for="player">Player</label>
+      <input id="player" list="players" placeholder="Select or search player">
+      <datalist id="players"></datalist>
+
+      <label for="opponent">Opponent</label>
+      <input id="opponent" list="teams" placeholder="Select or search opponent">
+      <datalist id="teams"></datalist>
+
+      <select id="location">
+        <option value="">Game Location</option>
+        <option value="home">Home</option>
+        <option value="away">Away</option>
+      </select>
+
+      <input id="minutes" type="number" placeholder="Expected Minutes" min="0" max="48">
+
+      <button onclick="predict()">Predict Performance</button>
+    </div>
+
+    <div class="results">
+      <h2>Prediction Result</h2>
+      <p>Points: <span id="points">--</span></p>
+      <p>Rebounds: <span id="rebounds">--</span></p>
+      <p>Assists: <span id="assists">--</span></p>
+      <p>Total PRA: <span id="pra">--</span></p>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
