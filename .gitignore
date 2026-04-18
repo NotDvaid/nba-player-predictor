@@ -12,10 +12,13 @@ venv/
 # Model files
 *.pkl
 
+# Plots / generated outputs
+plots/
+
 # OS files
 .DS_Store
 Thumbs.db
 
 # IDE
 .vscode/
-.idea/s
+.idea/
